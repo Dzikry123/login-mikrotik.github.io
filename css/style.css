@@ -196,6 +196,7 @@ a:hover{
 	.login-content h2{
         font-size: 2rem;
         margin: 8px 0;
+		
 	}
 
 	.img img{
@@ -218,5 +219,17 @@ a:hover{
 
 	.login-content{
 		justify-content: center;
+	}
+
+	.login-content h2 {
+		margin-bottom: 2rem;
+	}
+
+	.btn {
+		background-image: #FDE50A;
+	}
+
+	a {
+		margin: 1rem 0;
 	}
 }
