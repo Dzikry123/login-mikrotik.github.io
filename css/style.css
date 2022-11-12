@@ -31,11 +31,27 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	position: relative;
 }
 
-/* .overlay {
-	display: none;
-} */
+.overlay {
+	display: block;
+	position: absolute;
+	bottom: 6rem;
+	left: 0;
+	font-size: 3rem;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 0.2rem 0.7rem;
+	border-radius: 0 7px 0px 7px;
+}
+
+.overlay .fakultas {
+	color: rgb(255, 208, 0);
+}
+
+.overlay .univ {
+	color: white;
+}
 
 .login-content{
 	display: flex;
@@ -208,6 +224,11 @@ a:hover{
 	.img img{
 		width: 500px;
 	}
+
+	.overlay{
+		font-size: 2rem;
+		bottom: 7rem;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -269,12 +290,12 @@ a:hover{
 	.overlay {
 		display: block;
 		position: absolute;
-		bottom: 2rem;
+		bottom: 0;
 		font-size: 1.9rem;
-		margin-left: -100px;
+		left:-4.5rem;
 		background-color: rgba(0, 0, 0, 0.3);
 		padding: 0.2rem 0.7rem;
-		border-raidus: 7px;
+		border-radius: 0 7px 0px 7px;
 	}
 
 	.overlay .fakultas {
