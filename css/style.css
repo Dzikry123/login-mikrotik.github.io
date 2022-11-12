@@ -270,6 +270,7 @@ a:hover{
 		grid-template-columns: none;
 		overflow: auto;
 		width: 31rem;
+		grid-gap: 5rem;
 	}
 
 	.wave{
@@ -292,7 +293,7 @@ a:hover{
 		position: absolute;
 		bottom: 0;
 		font-size: 1.9rem;
-		left:-4.5rem;
+		left:-2.5rem;
 		background-color: rgba(0, 0, 0, 0.3);
 		padding: 0.2rem 0.7rem;
 		border-radius: 0 7px 0px 7px;
