@@ -33,6 +33,10 @@ body{
 	align-items: center;
 }
 
+/* .overlay {
+	display: none;
+} */
+
 .login-content{
 	display: flex;
 	justify-content: flex-start;
@@ -186,7 +190,7 @@ a:hover{
 
 @media screen and (max-width: 1050px){
 	.container{
-		grid-gap: 5rem;
+		grid-gap: 3rem;
 	}
 }
 
@@ -206,14 +210,15 @@ a:hover{
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
 	.container{
-		grid-template-columns: 1fr;
-		height: 150vh;
+		display: grid;
+    grid-template-columns: repeat(2, 1fr);
 	}
 
 	.img{
-		
+		display: flex;
+		justify-content: center;
 	}
 
 	.wave{
@@ -236,3 +241,64 @@ a:hover{
 		margin: 1rem 0;
 	}
 }
+
+@media screen and (max-width : 500px) {
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		grid-template-columns: none;
+		overflow: auto;
+		width: 31rem;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.img  {
+		width: 350px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.img img {
+		border-radius: 0;
+		filter: brightness(0.9);
+	}
+
+	.overlay {
+		display: block;
+		position: absolute;
+		bottom: 2rem;
+		font-size: 1.9rem;
+		margin-left: -100px;
+		background-color: rgba(0, 0, 0, 0.3);
+		padding: 0.2rem 0.7rem;
+		border-raidus: 7px;
+	}
+
+	.overlay .fakultas {
+		color: rgb(255, 208, 0);
+	}
+
+	.overlay .univ {
+		color: white;
+	}
+
+	.login-content {
+		width: 500px;
+		font-size: 1.5rem;
+	}
+}
+
+
+/* 
+	border-radius : none -> 500px
+	grid gap : 3rem -> 1050px
+	width : 500px -> 500px 
+
+	.img (500px) {
+		width : 350px
+		margin: 0 auto
+	}
+*/
