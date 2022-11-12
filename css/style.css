@@ -24,6 +24,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap :7rem;
     padding: 0 2rem;
+	box-sizing: border-box;
 }
 
 .img{
@@ -40,7 +41,8 @@ body{
 }
 
 .img img{
-	width: 500px;
+	width: 700px;
+	border-radius: 10px;
 }
 
 form{
@@ -200,17 +202,18 @@ a:hover{
 	}
 
 	.img img{
-		width: 400px;
+		width: 500px;
 	}
 }
 
 @media screen and (max-width: 900px){
 	.container{
 		grid-template-columns: 1fr;
+		height: 150vh;
 	}
 
 	.img{
-		display: none;
+		
 	}
 
 	.wave{
